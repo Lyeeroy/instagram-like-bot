@@ -28,7 +28,14 @@ class ig(object):
         print("*----------------------*")
         print('| Custom:          [3] |')
         print("*----------------------*")
-        #Hashtags for inspiration: #likeforlike #likeforfollow #likeforalike #likeforlikes #likeforashoutout #likefortags #likeforlikeback #likeforafollow #likeforlikealways #likeforfollowers #likeforme #likeforcomment #likefortag #likeforashououtback #likeforfollows #likeforliketeam #likeforelike #like4like #likeforlikefromme #likeforfun #likeforlikesback #likeforshare #likeforlikeandfollow #likeforspam #likeforsshoutouts #like4follow #like4likes #like4shoutout #like4comment
+        # # - Hashtags for inspiration: -
+        # #likeforlike #likeforfollow
+        # #likeforalike #likeforlikes #likeforashoutout #likefortags
+        # #likeforlikeback #likeforafollow #likeforlikealways #likeforfollowers
+        # #likeforme #likeforcomment #likefortag #likeforashououtback #likeforfollows
+        # #likeforliketeam #likeforelike #like4like #likeforlikefromme #likeforfun
+        # #likeforlikesback #likeforshare #likeforlikeandfollow #likeforspam #likeforsshoutouts
+        # #like4follow #like4likes #like4shoutout #like4comment
         self.qht = input('hashtag: ')
 
         if self.qht == "1":
@@ -93,7 +100,7 @@ class ig(object):
             time.sleep(sleepForPic)
             for self.i in range(0, int(self.likelimit)):
                 try:
-                    self.like = self.driver.find_element_by_xpath("//span[@class='glyphsSpriteHeart__outline__24__grey_9 u-__7']") #LIKE BTN
+                    self.like = self.driver.find_element_by_xpath("/html/body/div[3]/div/div[2]/div/article/div[2]/section[1]/span[1]/button/span") #LIKE BTN
                     self.next = self.driver.find_element_by_xpath("//a[@class='HBoOv coreSpriteRightPaginationArrow']") #NEXT BTN
                     self.likes = self.likes + 1
                     self.like.click()
