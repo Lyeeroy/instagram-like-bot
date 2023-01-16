@@ -1,4 +1,4 @@
-# instagram-like-bot
+# instagram-like-bot: OUTDATED
 
 Funcs:
 
